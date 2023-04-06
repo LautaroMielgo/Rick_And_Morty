@@ -1,3 +1,120 @@
+body{
+   background-image: url(https://imgs.search.brave.com/YxB-DJC9AYBguAO4ZI0tS9yAgYugr8R6HTeCbK4yYKU/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/eHRyYWZvbmRvcy5j/b20vd2FsbHBhcGVy/cy9yZXNvbHVjaW9u/ZXMvMjAvcmljay15/LW1vcnR5LWZhbmFy/dC0yMDIwXzI1NjB4/MTQ0MF82MzQ0Lmpw/Zw);
+}
 .App {
    text-align: center;
+   
 }
+
+.card{
+   display: flex;
+   backdrop-filter: blur(20px);
+   flex-direction: column;
+   width: 15%;
+   height: fit-content;
+   
+   margin: 30px;
+   
+}   
+.cards{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   max-height: fit-content;
+   
+}
+.card h2{
+   font-size: medium;
+   margin: 5px;
+   color: rgb(255, 255, 255);
+   
+}
+
+.card button{ 
+   align-self: center;
+}
+
+.detail{
+   display: flex;
+   flex-direction: row;
+   align-content: flex-end;
+   margin-top: 50px;
+   
+}
+.detailh2{
+   backdrop-filter: blur(10px);
+   margin-left: 100px;
+   width: 500px;
+   color: aliceblue;
+   
+   
+}
+.detail img{
+   margin-left: 150px;
+   width: 400px;
+}
+
+.about{
+   
+   width: 300px;
+   margin-left: 550px;
+   backdrop-filter: blur(20px);
+
+
+}
+   
+.about h1 {
+   color: blanchedalmond;
+}
+.about p {
+   color: rgb(255, 255, 255);
+}
+.navBotones{
+   display: flex;
+}
+   
+.navBotones button{
+   background: none;
+   backdrop-filter: blur(20px);
+   margin-left: 320px;
+   
+   width: 200px;
+   height: 50px;
+}
+   
+
+.link{
+   font-size: large;
+   color: aliceblue;
+   text-decoration: none;
+}
+
+
+.barra{
+   margin-top: 5px;
+}
+.botonAgregar{
+   background: none;
+   backdrop-filter: blur(20px);
+   color: white;
+   font-size: larger;
+   margin-left: 5px;
+   width: 100px;
+   height: 50px;
+}
+.input{
+   background: none;
+   backdrop-filter: blur(20px);
+   height: 25px;
+}
+   
+   
+   
+   
+
+   
+   
+   
+   
+
+

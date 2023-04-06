@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 const Nav = ({onSearch}) =>{
       return(
-            <nav>
+            <nav className="nav">
                   <SearchBar onSearch={onSearch}/>
-
-                  <button>
-                        <Link to='/about'> ABOUT</Link>
+                  <div className="navBotones">
+                  <button className="boton">
+                        <Link className="link" to='/about'> ABOUT</Link>
                   </button>
-
                   <button>
-                        <Link to='/home'> HOME</Link>
+                        <Link className="link" to='/home'> HOME</Link>
                   </button>
+                  </div>
             </nav>
       )
 }

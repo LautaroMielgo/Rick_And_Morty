@@ -8,9 +8,9 @@ export default function SearchBar({onSearch}) {
    }
 
    return (
-      <div>
-         <input type='search' onChange={handleChange} value={id}/>
-         <button onClick={() => {onSearch(id); setId('')}}>Agregar</button>
+      <div className="barra">
+         <input className="input" type='search' onChange={handleChange} value={id}/>
+         <button className="botonAgregar" onClick={() => {onSearch(id); setId('')}}>Agregar</button>
       </div>
    );
 }

@@ -1,20 +1,22 @@
 import './App.css';
 import Cards from './components/Cards.jsx';
 import Nav from './components/Nav.jsx';
+import About from './components/About';
+import Detail from './components/Detail';
 import { useState } from 'react';
 import axios from 'axios';
 import { Route, Routes } from 'react-router-dom';
-import About from './components/About';
-import Detail from './components/Detail';
 
-const URL_BASE = '';
-const API_KEY = '';
+const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
+const API_KEY = 'deef7daa72ae.2e039bea638a9fa70407';
 
 function App() {
-   const [characters,setCharacters] = useState([])
+   const [characters,setCharacters] = useState([]);
 
    const onSearch = (id)=> {
-      axios(`${URL_BASE}/${id}?key=${API_KEY}`).then(({ data }) => {
+      axios(`${URL_BASE}/${id}?key=${API_KEY}`)
+      .then(response => response.data)
+      .then(( data ) => {
          if (data.name) {
             setCharacters((oldChars) => [...oldChars, data]);          
          } else {
@@ -24,7 +26,7 @@ function App() {
    }
 
    const onClose = (id) =>{
-      const charactersFiltered = characters.filter(character =>character.id !== Number(id))
+      const charactersFiltered = characters.filter(character => character.id !== (id))
       setCharacters(charactersFiltered)
    }
 

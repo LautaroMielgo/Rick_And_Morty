@@ -2,7 +2,7 @@ import Card from './Card';
 
 export default function Cards({characters, onClose}) {
    return (
-      <div>
+      <div className='cards'>
          {
             characters.map(({id,name,status,species,gender,origin,image}) =>{
                return(

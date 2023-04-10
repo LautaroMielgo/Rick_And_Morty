@@ -8,12 +8,14 @@ body{
 
 .card{
    display: flex;
-   backdrop-filter: blur(20px);
+   backdrop-filter: blur(15px);
    flex-direction: column;
    width: 15%;
    height: fit-content;
    
    margin: 30px;
+
+   
    
 }   
 .cards{
@@ -69,6 +71,7 @@ body{
 .about p {
    color: rgb(255, 255, 255);
 }
+
 .navBotones{
    display: flex;
 }
@@ -107,7 +110,28 @@ body{
    backdrop-filter: blur(20px);
    height: 25px;
 }
+
+.form{
+   display: flex;
+   flex-direction: column;
+   width: 20%;
+   margin-left: 40%;
+   margin-top: 10%;
+   backdrop-filter: blur(15px);
    
+}
+.form label{
+   color: white;
+}
+.form p {
+   color: red;
+}
+.form button{
+   margin-top: 20px;
+   width: 40%;
+   margin-left: 30%;
+}
+
    
    
    

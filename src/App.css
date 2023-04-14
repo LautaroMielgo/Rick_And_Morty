@@ -72,17 +72,30 @@ body{
    color: rgb(255, 255, 255);
 }
 
+
+
+.nav{
+   display: flex;
+}
+
+
 .navBotones{
    display: flex;
+
+   align-content: flex-start;
+   width: 400px;
+   
+   
 }
    
 .navBotones button{
+   
    background: none;
    backdrop-filter: blur(20px);
-   margin-left: 320px;
-   
-   width: 200px;
-   height: 50px;
+   margin-left: 100px;
+   margin-top: 5px;
+   width: 100px;
+   height: 30px;
 }
    
 
@@ -94,8 +107,11 @@ body{
 
 
 .barra{
+   width: 40%;
+   margin-left: 10%;
    margin-top: 5px;
 }
+
 .botonAgregar{
    background: none;
    backdrop-filter: blur(20px);
@@ -103,33 +119,48 @@ body{
    font-size: larger;
    margin-left: 5px;
    width: 100px;
-   height: 50px;
+   height: 30px;
 }
 .input{
+   color: white;
    background: none;
    backdrop-filter: blur(20px);
    height: 25px;
+   border-radius: 5%;
 }
 
 .form{
    display: flex;
    flex-direction: column;
    width: 20%;
-   margin-left: 40%;
-   margin-top: 10%;
-   backdrop-filter: blur(15px);
+   margin-left: 80%;
+   margin-top: 2%;
+   
    
 }
 .form label{
    color: white;
 }
 .form p {
-   color: red;
+   color: rgb(255, 0, 0);
 }
 .form button{
    margin-top: 20px;
    width: 40%;
    margin-left: 30%;
+   color: white;
+   background: none;
+   backdrop-filter: blur(20px);
+}
+.form input{
+   border-radius: 5%;
+   width: 200px;
+   margin-left: 40px;
+   color: white;
+   background: none;
+   backdrop-filter: blur(20px);
+   border-color: white;
+   
 }
 
    

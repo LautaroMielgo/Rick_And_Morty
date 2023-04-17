@@ -21,12 +21,15 @@ import { useState, useEffect } from "react";
       }
    }
    useEffect(() => {
-      myFavorites.forEach((fav) => {
-         if (fav.id === id) {
-            setIsFav(true);
-         }
-      });
+      if (myFavorites) {
+         myFavorites.forEach((fav) => {
+            if (fav.id === id) {
+               setIsFav(true);
+            }
+         });
+      }
    }, [myFavorites]);
+
    
    
    
